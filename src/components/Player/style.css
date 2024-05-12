@@ -1,0 +1,101 @@
+.container{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player{
+    width: 60vw;
+    height: 60vh;
+    margin: 3vh;
+    background-color: black;
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+   .player{
+    width: 70vw;
+    height: 50vw;
+   }
+}
+
+video{
+    height: 100%;
+    width: 100%;
+}
+
+audio{
+    height: 100%;
+    width: 100%;
+}
+
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom , rgba(0, 0, 0, 0.10), transparent), linear-gradient(to top, rgba(0, 0, 0, 0.10), transparent);
+    z-index: 99;
+    transition: .5s;
+}
+
+.name{
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.section-1 , .section-2{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speed{
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.timeline{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.bar{
+    width: 95%;
+    height: 5px;
+    background-color: black;
+    position: relative;
+    border-radius: 5px;
+}
+
+.progress-bar{
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    overflow: hidden;
+}
+
+.duration{
+    font-size: 10px;
+}
+
+.btn{
+    cursor: pointer;
+}
+
